@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import { useEffect } from "react"
 
-export default function Blogger() {
+export default function blogger() {
     const router = useRouter
     const title = router.query.blogs
 
