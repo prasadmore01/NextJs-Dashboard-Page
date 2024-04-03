@@ -7,7 +7,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 export default function Blogs() {
 
-    const { data, error } = useSWR("http://localhost:3000/blogs.json", fetcher)
+    const { data, error } = useSWR("https://next-js-dashboard-page.vercel.app/blogs.json", fetcher)
 
 
     return (
