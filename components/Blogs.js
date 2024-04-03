@@ -15,15 +15,15 @@ export default function Blogs() {
             {data &&
                 <div>
                     <div className="flex flex-wrap gap-8 justify-center mt-7 mb-7">
-                        {data.map((d)=>{
+                        {data.map((d,i)=>{
                             let str = d.title
                             let arr = str.split(" ")
                             let urlTitle = arr.join("_")
                             return(
                                 
-                                <div className="w-[450px] bg-gray-200 shadow-lg p-5 rounded-lg ">
+                                <div className="w-[450px] bg-gray-200 shadow-lg p-5 rounded-lg " key={i}>
                                     <Image src="https://source.unsplash.com/1600x1000/?blogs" width={500}
-                                    height={500} className="mb-3"/>
+                                    height={500} alt="Blog Image" className="mb-3"/>
                                     <h1 className="font-bold text-[26px] mb-4">{d.title}</h1>
                                     <h4 className="text-[17px] mb-4">{d.blog}</h4>
                                     <p className="text-[15px] font-semibold mb-4">Published Date : {d.date}</p>
