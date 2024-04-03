@@ -8,7 +8,7 @@ export default function Header(){
         <>
             <div className="flex flex-wrap justify-between pl-9 pr-9 w-[100%] h-[80px] items-center sticky top-0 bg-blue-400">
                 <div>
-                    <img src="http://localhost:3000/logo.png" className="w-[180px] h-[80px] p-1" />
+                    <img src="/logo.png" className="w-[180px] h-[80px] p-1" />
                 </div>
 
                 <div>
